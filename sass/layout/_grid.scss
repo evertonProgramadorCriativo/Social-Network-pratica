@@ -1,0 +1,17 @@
+.row {
+    max-width: $grid-width;
+    background-color: #eee;
+    margin: 0 auto;
+    //margin-bottom: $gutter-vertical;  
+
+        &:not(:last-child) {
+            margin-bottom: $gutter-vertical;
+        }
+             /*margin para  todas as linhas(row) exceto para ultima linha 
+             
+               &:not(last-child) {
+              margin-bottom: $gutter-vertical;
+        }
+             
+             */
+}
