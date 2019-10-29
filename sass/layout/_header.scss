@@ -1,0 +1,46 @@
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom ,
+    rgba(47, 153, 28, 0.5),
+    $color-primary-dark), 
+     url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+
+    /*clip-path: polygon(x y , x y, x y);*/
+   /* clip-path: polygon(0 0, x y, x y);*/
+   /* clip-path: polygon(0 0, 100% 0, x y);*/
+   /*clip-path: polygon(0 0, 100% 0, 100% 200px);
+   
+   ------------------------------------
+   https://bennettfeely.com/clippy/
+   ------------------------------------
+   */
+  /* clip-path: polygon(0 0, 100% 0, 100% 200px, 0 100%); */
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
+
+  &__logo-box {       
+    position: absolute;
+    top: 70px;
+    left: 70px;
+  }
+  
+  &__logo{
+    height: 35px;
+
+}
+&__text-box {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform:  translate(-50%, -50%);
+ text-align:  center;
+
+
+}
+
+
+}
+
