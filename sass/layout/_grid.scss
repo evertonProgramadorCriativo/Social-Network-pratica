@@ -14,4 +14,36 @@
         }
              
              */
+
+
+             /*trabalhando com colunas
+                 col-1-of-2
+
+             a coluna sempre vai esta dentro de uma linha ( $grid-width),
+             agora como podemos definir a largura dessa coluna?
+             e toda largura dessa linha  menis essa sarjeta , esse espaço aqui 
+             divido por dois
+
+             $gutter-horizontal  -> espaço da sarjeta ou calha  $gutter-horizantal: 6rem;
+
+                  100% -> tamanho da linha 
+                  - 6rem espaço entre as linhas
+                  #{ para funcionar a variavel }
+                     width: calc(( 100% - $gutter-horizantal) / 2) 
+
+             */
+
+
+ .col-1-of-2 {
+
+     width: calc(( 100% - #{$gutter-horizantal}) / 2) ;
+     background-color: red;
+     float: left;
+   
+    &:not(:last-child) {
+         margin-right: $gutter-horizantal;
+    }
+
+}
+
 }
