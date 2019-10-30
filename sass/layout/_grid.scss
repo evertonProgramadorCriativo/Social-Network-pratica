@@ -13,7 +13,6 @@
         
         //tudo que comerça com ^ no caso  atributo class  que tenha col que estaja no comerço
          [class^="col-"] {
-            background-color: red;
             float: left;
           
            &:not(:last-child) {
