@@ -218,12 +218,20 @@ body {
   -moz-perspective: 150rem; }
   .card__side {
     background-color: red;
+    color: white;
     height: 50rem;
     font-size: 2rem;
     height: 50rem;
     transition: all .8s; }
-  .card:hover .card__side {
+    .card__side--front {
+      background-color: #3907f1; }
+    .card__side--back {
+      background-color: #36f375;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
     transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
