@@ -2,12 +2,16 @@
 
   perspective: 150rem;
   -moz-perspective: 150rem;
+  position: relative;
 
 &__side {
         background-color: red;   
         color: white;
         height: 50rem;
         font-size: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
 
         height: 50rem;
         transition: all .8s;
