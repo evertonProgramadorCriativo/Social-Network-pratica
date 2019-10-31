@@ -214,8 +214,16 @@ body {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .card {
-  background-color: red;
-  height: 50rem; }
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .card__side {
+    background-color: red;
+    height: 50rem;
+    font-size: 2rem;
+    height: 50rem;
+    transition: all .8s; }
+  .card:hover .card__side {
+    transform: rotateY(180deg); }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
