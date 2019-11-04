@@ -454,4 +454,4 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem); }
   .story__img {
-    width: 100%; }
+    height: 100%; }
