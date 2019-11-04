@@ -6,5 +6,16 @@
     border-radius: 3px;
     padding: 6rem;
     font-size: $default-font-size;
-
+ 
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        background-color: red;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        //circulo
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+    }
 }
