@@ -239,41 +239,107 @@ body {
   .row .col-3-of-4 {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
-.form__group:not(:last-child) {
-  margin-bottom: 2rem; }
+.form {
+  /*
+      Então vamos fazer isso.
 
-.form__input {
-  font-size: 1.5rem;
-  font-family: inherit;
-  color: inherit;
-  padding: 1.5rem 2rem;
-  border-radius: 2px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  border-bottom: 3px solid transparent;
-  width: 100%;
-  display: block; }
-  .form__input:focus {
-    outline: none;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #55c57a; }
-  .form__input:focus:invalid {
-    border-bottom: 3px solid #ff7730; }
-  .form__input::-webkit-input-placeholder {
-    color: #999; }
+Então nós selecionamos o irmão, e
 
-.form__label {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-left: 2rem;
-  margin-top: .7rem;
-  display: block;
-  transition: all .3s; }
+podemos usar o seletor irmão adjacente
 
-.form__input:placeholder-shown + .form__label {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-4rem); }
+novamente porque é um irmão direto.
+
+Mas desta vez, só para torná-lo um
+
+pouco diferente, vamos realmente usar este.
+
+Vai funcionar da mesma maneira.
+
+E agora selecionamos o rótulo de rádio.
+
+Então esse é o irmão.
+
+E então nós queremos o elemento filho deste.
+
+E esse é o botão de rádio.
+
+E o que realmente queremos é o pseudo-elemento
+
+depois, então esse daqui, certo?
+
+Então esse é um seletor enorme.
+                   <input type="radio" class="form__radio-input" id="large" name="size">
+                                    <label for="large" class="form__radio-label">
+                                            <span class="form__radio-button"></span>
+                                           large tour gruop
+                                    </label>
+  
+  */ }
+  .form__group:not(:last-child) {
+    margin-bottom: 2rem; }
+  .form__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    display: block;
+    transition: all .3s; }
+    .form__input:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid #55c57a; }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ff7730; }
+    .form__input::-webkit-input-placeholder {
+      color: #999; }
+  .form__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s; }
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem); }
+  .form__radio-group {
+    width: 49%;
+    display: inline-block; }
+  .form__radio-label {
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 4.5rem; }
+  .form__radio-button {
+    height: 3rem;
+    width: 3rem;
+    border: 5px solid #55c57a;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -.4rem; }
+    .form__radio-button::after {
+      content: "";
+      display: block;
+      height: 1rem;
+      width: 1rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #55c57a;
+      opacity: 0;
+      transition: opacity .2s; }
+  .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+    opacity: 1; }
 
 .bg-video {
   position: absolute;
