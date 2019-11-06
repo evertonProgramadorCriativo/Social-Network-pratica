@@ -57,6 +57,12 @@
 
     }
 
+
+    &__radio-input {
+
+      display: none;
+    }
+
     &__radio-label {
         font-size: $default-font-size;
         cursor: pointer;
@@ -99,6 +105,40 @@
     }
 
   /*
+
+            Então, temos essa pseudo-classe marcada disponível para nós.
+
+E o que fazemos então
+
+é simplesmente selecionar o irmão daquele, e depois o filho,
+
+porque é esse que queremos mudar
+
+cada vez que a entrada de rádio é selecionada.
+
+E o que queremos fazer, queremos dar-lhe
+
+uma opacidade de um.
+
+Então foi zero, e agora será um.
+
+Isso apenas adiciona a transição aqui, é claro.
+
+
+ &__radio-input:checked ~ &__radio-label &__radio-button::after {
+      opacity: 1;
+    }
+
+
+
+    -------------------------------------------
+
+
+
+
+
+
+
       Então vamos fazer isso.
 
 Então nós selecionamos o irmão, e
