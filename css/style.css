@@ -31,7 +31,7 @@ Dark green: #28b485
     transform: translateY(30px); }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translateY(0); } }
 
 *,
 *::after,
@@ -68,7 +68,7 @@ body {
     animation-name: moveInLeft;
     animation-duration: 4s;
     animation-delay: 2s;
-    animation-iteration-count: 2; }
+    animation-iteration-count: 4; }
   .heading-primary--sub {
     display: block;
     font-size: 20px;
@@ -538,7 +538,10 @@ Então esse é um seletor enorme.
 
 .btn--animated {
   animation: moveInBotton 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards; }
+  animation-fill-mode: backwards;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: 4; }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;

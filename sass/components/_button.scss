@@ -79,6 +79,10 @@
     &--animated {
       animation: moveInBotton.5s ease-out .75s;
       animation-fill-mode: backwards;
+      animation-duration: 4s;
+      animation-delay: 2s;
+      animation-iteration-count: 4 ;
+
     }
     
 
