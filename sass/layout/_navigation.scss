@@ -4,7 +4,14 @@
 
     }
     &__button {
-        
+        background-color: $color-white;
+        height: 7rem;
+        width: 7rem;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        border-radius: 50%;
+
     }
     &__background {
         height: 6rem;
@@ -14,6 +21,7 @@
         top: 6.5rem;
         right: 6.4rem;
         background-image: radial-gradient($color-primary, $color-primary-dark);
+        z-index: 1000;
         
     }
     &__nav {
