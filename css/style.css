@@ -374,6 +374,9 @@ body {
 .navigation__button:hover .navigation__icon::after {
   top: 1rem; }
 
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
 .form {
   /*
 
