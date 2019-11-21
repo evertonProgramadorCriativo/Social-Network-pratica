@@ -39,6 +39,9 @@ $breakpoint arguement choices:
 -big-desktop
 
 1em = 16px
+
+
+ORDER: Base + typography > general layout + page layout > compoments
 */
 
 @mixin respond ($breakpoint) {
